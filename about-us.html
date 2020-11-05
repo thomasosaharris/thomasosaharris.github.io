@@ -10,7 +10,7 @@
 
   <!-- Title and description ================================================== -->
   <title>
-  About Us | Thomas Osa Harris, Inc. &ndash; David Heil and Associates, Inc.
+  About Us | Thomas Osa Harris, Inc. &ndash; Thomas Osa Harris, Inc.
   </title>
 
   
@@ -23,8 +23,8 @@
 
 
 
-<meta property="og:site_name" content="David Heil and Associates, Inc.">
-<meta property="og:url" content="https://mareevtc.myshopify.com/pages/about-us">
+<meta property="og:site_name" content="Thomas Osa Harris, Inc.">
+<meta property="og:url" content="about-us.html">
 <meta property="og:title" content="About Us | Thomas Osa Harris, Inc.">
 <meta property="og:type" content="website">
 <meta property="og:description" content="We are a results-oriented intellectual property and commercial litigation boutique with big firm experience, attractive small firm rates, and a long history of putting our clients’ interests ahead of our own. We understand the financial pressures that our clients face and use our extensive experience and judgment to">
@@ -77,329 +77,6 @@
   <script src="theme-hekqr6bur6qk87nzdt6sp0phwful9pi0facq35vnm3g4s8xwyz96d1a2.js?v=6614436609813931143" defer="defer"></script>
 
   <!-- Header hook for plugins ================================================== -->
-  
-
-
-
-
-
-<script type="module">!function(o){(o.Shopify=o.Shopify||{}).modules=!0}(window);</script>
-<script>!function(o){function n(){var o=[];function n(){o.push(Array.prototype.slice.apply(arguments))}return n.q=o,n}var t=o.Shopify=o.Shopify||{};t.loadFeatures=n(),t.autoloadFeatures=n()}(window);</script>
-<script id="__st">var __st={"a":26656112814,"offset":-18000,"reqid":"d79ed808-1c57-4ac3-9587-854fa60c8ebe","pageurl":"mareevtc.myshopify.com\/pages\/about-us","s":"pages-72831434926","u":"e59112a0564f","p":"page","rtyp":"page","rid":72831434926};</script>
-<script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
-<script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-window.ShopifyAnalytics.meta.currency = 'USD';
-var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":72831434926}};
-for (var attr in meta) {
-  window.ShopifyAnalytics.meta[attr] = meta[attr];
-}</script>
-<script>window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-  
-};
-</script>
-<script class="analytics">(function () {
-  var customDocumentWrite = function(content) {
-    var jquery = null;
-
-    if (window.jQuery) {
-      jquery = window.jQuery;
-    } else if (window.Checkout && window.Checkout.$) {
-      jquery = window.Checkout.$;
-    }
-
-    if (jquery) {
-      jquery('body').append(content);
-    }
-  };
-
-  var hasLoggedConversion = function(token) {
-    if (document.cookie.indexOf('loggedConversion=' + window.location.pathname) !== -1) {
-      return true;
-    }
-    if (token) {
-      return document.cookie.indexOf('loggedConversion=' + token) !== -1;
-    }
-    return false;
-  }
-
-  var setCookieIfConversion = function(token) {
-    if (token) {
-      var twoMonthsFromNow = new Date(Date.now());
-      twoMonthsFromNow.setMonth(twoMonthsFromNow.getMonth() + 2);
-
-      document.cookie = 'loggedConversion=' + token + '; expires=' + twoMonthsFromNow;
-    }
-  }
-
-  var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-  if (trekkie.integrations) {
-    return;
-  }
-  trekkie.methods = [
-    'identify',
-    'page',
-    'ready',
-    'track',
-    'trackForm',
-    'trackLink'
-  ];
-  trekkie.factory = function(method) {
-    return function() {
-      var args = Array.prototype.slice.call(arguments);
-      args.unshift(method);
-      trekkie.push(args);
-      return trekkie;
-    };
-  };
-  for (var i = 0; i < trekkie.methods.length; i++) {
-    var key = trekkie.methods[i];
-    trekkie[key] = trekkie.factory(key);
-  }
-  trekkie.load = function(config) {
-    trekkie.config = config;
-    var script = document.createElement('script');
-    script.type = 'text/javascript';
-    script.onerror = function(e) {      var Monorail = {
-      produce: function produce(monorailDomain, schemaId, payload) {
-        var currentMs = new Date().getTime();
-        var event = {
-          schema_id: schemaId,
-          payload: payload,
-          metadata: {
-            event_created_at_ms: currentMs,
-            event_sent_at_ms: currentMs
-          }
-        };
-        return Monorail.sendRequest("https://" + monorailDomain + "/v1/produce", JSON.stringify(event));
-      },
-      sendRequest: function sendRequest(endpointUrl, payload) {
-        // Try the sendBeacon API
-        if (window && window.navigator && typeof window.navigator.sendBeacon === 'function' && typeof window.Blob === 'function' && !Monorail.isIos12()) {
-          var blobData = new window.Blob([payload], {
-            type: 'text/plain'
-          });
-    
-          if (window.navigator.sendBeacon(endpointUrl, blobData)) {
-            return true;
-          } // sendBeacon was not successful
-    
-        } // XHR beacon   
-    
-        var xhr = new XMLHttpRequest();
-    
-        try {
-          xhr.open('POST', endpointUrl);
-          xhr.setRequestHeader('Content-Type', 'text/plain');
-          xhr.send(payload);
-        } catch (e) {
-          console.log(e);
-        }
-    
-        return false;
-      },
-      isIos12: function isIos12() {
-        return window.navigator.userAgent.lastIndexOf('iPhone; CPU iPhone OS 12_') !== -1 || window.navigator.userAgent.lastIndexOf('iPad; CPU OS 12_') !== -1;
-      }
-    };
-    Monorail.produce('monorail-edge.shopifysvc.com',
-      'trekkie_storefront_load_errors/1.0',
-      {shop_id: 26656112814,
-      theme_id: 115212943534,
-      app_name: "storefront"});
-
-      
-    };
-    script.async = true;
-    script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2020.07.13.1';
-    var first = document.getElementsByTagName('script')[0];
-    first.parentNode.insertBefore(script, first);
-  };
-  trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":26656112814,"isMerchantRequest":null,"themeId":115212943534,"themeCityHash":"7072240476864506514","contentLanguage":"en","currency":"USD"},"isServerSideCookieWritingEnabled":true,"isPixelGateEnabled":true},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":1},"Session Attribution":{}}
-  );
-
-  var loaded = false;
-  trekkie.ready(function() {
-    if (loaded) return;
-    loaded = true;
-
-    window.ShopifyAnalytics.lib = window.trekkie;
-    
-
-    var originalDocumentWrite = document.write;
-    document.write = customDocumentWrite;
-    try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-    document.write = originalDocumentWrite;
-      (function () {
-        if (window.BOOMR && (window.BOOMR.version || window.BOOMR.snippetExecuted)) {
-          return;
-        }
-        window.BOOMR = window.BOOMR || {};
-        window.BOOMR.snippetStart = new Date().getTime();
-        window.BOOMR.snippetExecuted = true;
-        window.BOOMR.snippetVersion = 12;
-        window.BOOMR.application = "storefront-renderer";
-        window.BOOMR.themeName = "Brooklyn";
-        window.BOOMR.themeVersion = "17.1.0";
-        window.BOOMR.shopId = 26656112814;
-        window.BOOMR.themeId = 115212943534;
-        window.BOOMR.url =
-          "https://cdn.shopify.com/shopifycloud/boomerang/shopify-boomerang-1.0.0.min.js";
-        var where = document.currentScript || document.getElementsByTagName("script")[0];
-        var parentNode = where.parentNode;
-        var promoted = false;
-        var LOADER_TIMEOUT = 3000;
-        function promote() {
-          if (promoted) {
-            return;
-          }
-          var script = document.createElement("script");
-          script.id = "boomr-scr-as";
-          script.src = window.BOOMR.url;
-          script.async = true;
-          parentNode.appendChild(script);
-          promoted = true;
-        }
-        function iframeLoader(wasFallback) {
-          promoted = true;
-          var dom, bootstrap, iframe, iframeStyle;
-          var doc = document;
-          var win = window;
-          window.BOOMR.snippetMethod = wasFallback ? "if" : "i";
-          bootstrap = function(parent, scriptId) {
-            var script = doc.createElement("script");
-            script.id = scriptId || "boomr-if-as";
-            script.src = window.BOOMR.url;
-            BOOMR_lstart = new Date().getTime();
-            parent = parent || doc.body;
-            parent.appendChild(script);
-          };
-          if (!window.addEventListener && window.attachEvent && navigator.userAgent.match(/MSIE [67]./)) {
-            window.BOOMR.snippetMethod = "s";
-            bootstrap(parentNode, "boomr-async");
-            return;
-          }
-          iframe = document.createElement("IFRAME");
-          iframe.src = "about:blank";
-          iframe.title = "";
-          iframe.role = "presentation";
-          iframe.loading = "eager";
-          iframeStyle = (iframe.frameElement || iframe).style;
-          iframeStyle.width = 0;
-          iframeStyle.height = 0;
-          iframeStyle.border = 0;
-          iframeStyle.display = "none";
-          parentNode.appendChild(iframe);
-          try {
-            win = iframe.contentWindow;
-            doc = win.document.open();
-          } catch (e) {
-            dom = document.domain;
-            iframe.src = "javascript:var d=document.open();d.domain='" + dom + "';void(0);";
-            win = iframe.contentWindow;
-            doc = win.document.open();
-          }
-          if (dom) {
-            doc._boomrl = function() {
-              this.domain = dom;
-              bootstrap();
-            };
-            doc.write("<body onload='document._boomrl();'>");
-          } else {
-            win._boomrl = function() {
-              bootstrap();
-            };
-            if (win.addEventListener) {
-              win.addEventListener("load", win._boomrl, false);
-            } else if (win.attachEvent) {
-              win.attachEvent("onload", win._boomrl);
-            }
-          }
-          doc.close();
-        }
-        var link = document.createElement("link");
-        if (link.relList &&
-          typeof link.relList.supports === "function" &&
-          link.relList.supports("preload") &&
-          ("as" in link)) {
-          window.BOOMR.snippetMethod = "p";
-          link.href = window.BOOMR.url;
-          link.rel = "preload";
-          link.as = "script";
-          link.addEventListener("load", promote);
-          link.addEventListener("error", function() {
-            iframeLoader(true);
-          });
-          setTimeout(function() {
-            if (!promoted) {
-              iframeLoader(true);
-            }
-          }, LOADER_TIMEOUT);
-          BOOMR_lstart = new Date().getTime();
-          parentNode.appendChild(link);
-        } else {
-          iframeLoader(false);
-        }
-        function boomerangSaveLoadTime(e) {
-          window.BOOMR_onload = (e && e.timeStamp) || new Date().getTime();
-        }
-        if (window.addEventListener) {
-          window.addEventListener("load", boomerangSaveLoadTime, false);
-        } else if (window.attachEvent) {
-          window.attachEvent("onload", boomerangSaveLoadTime);
-        }
-        if (document.addEventListener) {
-          document.addEventListener("onBoomerangLoaded", function(e) {
-            e.detail.BOOMR.init({
-              producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
-              ResourceTiming: {
-                enabled: true,
-                trackedResourceTypes: ["script", "img", "css"]
-              },
-            });
-            e.detail.BOOMR.t_end = new Date().getTime();
-          });
-        } else if (document.attachEvent) {
-          document.attachEvent("onpropertychange", function(e) {
-            if (!e) e=event;
-            if (e.propertyName === "onBoomerangLoaded") {
-              e.detail.BOOMR.init({
-                producer_url: "https://monorail-edge.shopifysvc.com/v1/produce",
-                ResourceTiming: {
-                  enabled: true,
-                  trackedResourceTypes: ["script", "img", "css"]
-                },
-              });
-              e.detail.BOOMR.t_end = new Date().getTime();
-            }
-          });
-        }
-      })();
-    
-
-    
-        window.ShopifyAnalytics.lib.page(
-          null,
-          {"pageType":"page","resourceType":"page","resourceId":72831434926}
-        );
-      
-
-    var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
-    var token = match? match[1]: undefined;
-    if (!hasLoggedConversion(token)) {
-      setCookieIfConversion(token);
-      
-    }
-  });
-
-  
-      var eventsListenerScript = document.createElement('script');
-      eventsListenerScript.async = true;
-      eventsListenerScript.src = "//cdn.shopify.com/shopifycloud/shopify/assets/shop_events_listener-68ba3f1321f00bf07cb78a03841621079812265e950cdccade3463749ea2705e.js";
-      document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-    
-})();</script>
 
 <script integrity="sha256-JP8SIsmqE7shdlPA0+ooxAp5aigObaKa1CHuwqYHXIY=" data-source-attribution="shopify.loadfeatures" defer="defer" src="load_feature-gnnetx2r8oqb9rgwpob3670tkyeqda0wk7rsejdqbhyxu8u8fljakslx.js" crossorigin="anonymous"></script>
 <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="features-ujcwkd5ghp5j76v1bgp07g8arrjwlhin0791if1jzqqyiubmcgot2una.js" crossorigin="anonymous"></script>
@@ -500,7 +177,7 @@ for (var attr in meta) {
 
           <li class="mobile-nav__item">
             <a
-              href="../index.html"
+              href="index.html"
               class="mobile-nav__link"
               >
                 Home
@@ -554,7 +231,7 @@ for (var attr in meta) {
       
       
       
-        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="../index.html">Home</a></li>
+        <li class="mobile-nav__item mobile-nav__item--secondary"><a href="index.html">Home</a></li>
       
         <li class="mobile-nav__item mobile-nav__item--secondary"><a href="terms-of-service.html">Terms of Service</a></li>
       
@@ -592,9 +269,9 @@ for (var attr in meta) {
               
                 
 
-                <a href="../index.html" itemprop="url" class="site-header__logo-link">
+                <a href="index.html" itemprop="url" class="site-header__logo-link">
                   
-                    David Heil and Associates, Inc.
+                    Thomas Osa Harris, Inc.
                   
                 </a>
               
@@ -609,7 +286,7 @@ for (var attr in meta) {
                   
                     <li class="site-nav__item">
                       <a
-                        href="../index.html"
+                        href="index.html"
                         class="site-nav__link"
                         data-meganav-type="child"
                         >
@@ -786,7 +463,7 @@ for (var attr in meta) {
       
       
 
-              <li><a href="../index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
 
             
 
@@ -820,7 +497,7 @@ for (var attr in meta) {
               
               
                 <li>
-                  <a href="https://twitter.com/" title="David Heil and Associates, Inc. on Twitter">
+                  <a href="https://twitter.com/" title="Thomas Osa Harris, Inc. on Twitter">
                     <span class="icon icon-twitter" aria-hidden="true"></span>
                     Twitter
                   </a>
@@ -828,7 +505,7 @@ for (var attr in meta) {
               
               
                 <li>
-                  <a href="https://www.pinterest.com/" title="David Heil and Associates, Inc. on Pinterest">
+                  <a href="https://www.pinterest.com/" title="Thomas Osa Harris, Inc. on Pinterest">
                     <span class="icon icon-pinterest" aria-hidden="true"></span>
                     Pinterest
                   </a>
@@ -836,7 +513,7 @@ for (var attr in meta) {
               
               
                 <li>
-                  <a href="https://instagram.com/" title="David Heil and Associates, Inc. on Instagram">
+                  <a href="https://instagram.com/" title="Thomas Osa Harris, Inc. on Instagram">
                     <span class="icon icon-instagram" aria-hidden="true"></span>
                     Instagram
                   </a>
@@ -848,7 +525,7 @@ for (var attr in meta) {
               
               
                 <li>
-                  <a href="https://vimeo.com/" title="David Heil and Associates, Inc. on Vimeo">
+                  <a href="https://vimeo.com/" title="Thomas Osa Harris, Inc. on Vimeo">
                     <span class="icon icon-vimeo" aria-hidden="true"></span>
                     Vimeo
                   </a>
@@ -858,7 +535,7 @@ for (var attr in meta) {
             </ul>
         </div>
       
-<div class="grid__item one-third small--one-whole large--text-right"><form method="get" action="/" id="localization_form" accept-charset="UTF-8" class="selectors-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/pages/about-us" /></form><p class="site-footer__copyright-content">&copy; 2020, <a href="../index.html" title="">David Heil and Associates, Inc.</a><br>All Rights Reserved.</p><span class="visually-hidden">Payment methods</span>
+<div class="grid__item one-third small--one-whole large--text-right"><form method="get" action="/" id="localization_form" accept-charset="UTF-8" class="selectors-form" enctype="multipart/form-data"><input type="hidden" name="form_type" value="localization" /><input type="hidden" name="utf8" value="✓" /><input type="hidden" name="_method" value="put" /><input type="hidden" name="return_to" value="/pages/about-us" /></form><p class="site-footer__copyright-content">&copy; 2020, <a href="index.html" title="">Thomas Osa Harris, Inc.</a><br>All Rights Reserved.</p><span class="visually-hidden">Payment methods</span>
             <ul class="inline-list payment-icons site-footer__payment-icons"><li>
                   <svg class="icon" version="1.1" xmlns="http://www.w3.org/2000/svg" x="0" y="0" width="38" height="24" viewBox="0 0 38 24" xml:space="preserve" role="img" aria-labelledby="pi-alipay"><title id="pi-alipay">AliPay</title><path opacity=".07" d="M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z"/><path fill="#FFF" d="M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32"/><path fill="#00A0E9" d="M10.685 8.203H5.517c-.671 0-1.213.542-1.213 1.213v5.159c0 .68.542 1.222 1.213 1.222h5.158c.681 0 1.223-.542 1.223-1.212v-.08s-1.962-.817-2.959-1.302c-.671.809-1.529 1.312-2.417 1.312-1.509 0-2.022-1.321-1.312-2.188.158-.188.424-.376.829-.475.641-.157 1.667.099 2.623.415.168-.316.316-.671.424-1.046H6.128v-.295h1.529v-.543H5.823v-.296h1.844v-.77s0-.128.128-.128h.75v.897h1.825v.296H8.545v.543h1.49a5.878 5.878 0 0 1-.631 1.597c.454.168.858.316 1.164.424 1.085.365 1.332.385 1.332.385V9.416a1.215 1.215 0 0 0-1.215-1.213"/><path fill="#00A0E9" d="M5.468 12.522c-.592.494-.237 1.401.957 1.401.69 0 1.381-.425 1.923-1.104-.77-.366-1.43-.622-2.13-.553-.198.01-.553.089-.75.256"/><path d="M15.075 10.965l.868 1.874h-1.775l.907-1.874zm1.301 2.859h1.045l-1.953-4.241h-.286c-.049 0-.089.011-.128.04s-.069.06-.089.099l-1.982 4.103h.7l.355-.69h2.012l.326.689zm2.427 0h-.986V9.761a.187.187 0 0 1 .198-.178h.798v4.241h-.01zm.789-2.869c0-.05.02-.089.059-.129a.19.19 0 0 1 .139-.049h.799v3.156h-.986v-2.979h-.011zm2.762 2.11a.562.562 0 0 0 .157.395c.051.05.119.089.188.118.069.029.158.039.237.039s.158-.029.227-.078a.73.73 0 0 0 .188-.228c.049-.098.1-.217.129-.355a2.13 2.13 0 0 0 .049-.443c0-.207-.01-.384-.039-.542s-.07-.286-.119-.395-.107-.188-.177-.237a.395.395 0 0 0-.228-.078.586.586 0 0 0-.178.029.49.49 0 0 0-.157.089c-.049.039-.1.079-.148.128s-.088.099-.128.157v1.401zm-.987-2.15c0-.049.02-.099.049-.128.04-.04.08-.06.129-.06h.77v.247c.108-.089.236-.168.374-.228.139-.059.307-.089.493-.089.197 0 .385.04.543.119.168.079.306.188.425.315.117.139.207.296.266.474.059.177.099.364.099.572 0 .256-.04.493-.108.71a1.59 1.59 0 0 1-.829.937c-.197.09-.424.139-.67.139-.129 0-.237 0-.325-.01a.845.845 0 0 1-.267-.07v1.263h-.947v-4.191zm4.34 1.934a.69.69 0 0 1 .642-.69c.227-.02.364.029.444.079v1.114a.617.617 0 0 1-.444.188.678.678 0 0 1-.642-.691m1.342-2.081c-.454-.129-1.036-.158-1.824.049.029.079.059.217.088.296 1.253-.217 1.49-.05 1.49.493v.167c-.228-.02-.504-.049-.721-.059-.857-.01-1.164.661-1.164 1.096 0 .749.71 1.448 1.885.927v.117h.976v-2.277c-.001-.445-.385-.711-.73-.809m1.025-.1h1.006l.997 1.943.818-1.824c.02-.04.04-.069.079-.089a.243.243 0 0 1 .117-.03h.544l-1.579 3.512c-.384.956-1.301.819-1.469.819v-.533c.128 0 .552.01.738-.208a.717.717 0 0 0 .109-.197c.029-.059.049-.107.079-.156l.108-.257-1.547-2.98z"/><path fill="#00A0E9" d="M20.578 9.83c0 .247-.216.444-.493.444-.276 0-.493-.197-.493-.444s.217-.443.493-.443c.277 0 .493.196.493.443"/><path d="M32.514 9.88v.079h.186v.513h.108v-.513h.188V9.88h-.482zm1.085 0l-.199.364-.197-.364h-.099v.592h.099v-.395l.158.286h.079l.158-.286v.395h.098V9.88h-.097z"/></svg>
 
@@ -964,11 +641,11 @@ for (var attr in meta) {
           <div class="ajaxcart__row" data-line="{{line}}">
             <div class="grid">
               <div class="grid__item one-quarter">
-                <a href="https://mareevtc.myshopify.com/pages/{{url}}" class="ajaxcart__product-image"><img src="https://mareevtc.myshopify.com/pages/{{img}}" alt="{{name}}"></a>
+                <a href="{{url}}" class="ajaxcart__product-image"><img src="{{img}}" alt="{{name}}"></a>
               </div>
               <div class="grid__item three-quarters">
                 <div class="ajaxcart__product-name--wrapper">
-                  <a href="https://mareevtc.myshopify.com/pages/{{url}}" class="ajaxcart__product-name">{{{name}}}</a>
+                  <a href="{{url}}" class="ajaxcart__product-name">{{{name}}}</a>
                   {{#if variation}}
                     <span class="ajaxcart__product-meta">{{variation}}</span>
                   {{/if}}
